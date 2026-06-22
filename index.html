@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Target Hunter</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#050814;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+background-image:
+radial-gradient(circle at top,#14213d 0%,#050814 50%);
+}
+
+.container{
+width:100%;
+max-width:480px;
+}
+
+.card{
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:35px;
+padding:30px 25px;
+text-align:center;
+box-shadow:0 0 40px rgba(0,0,0,.5);
+}
+
+.logo{
+width:130px;
+height:130px;
+margin:auto;
+border-radius:50%;
+background:linear-gradient(135deg,#ffb300,#ff6f00);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+font-weight:bold;
+color:#fff;
+box-shadow:0 0 25px rgba(255,166,0,.5);
+}
+
+h1{
+color:white;
+font-size:48px;
+margin-top:25px;
+line-height:1.1;
+font-weight:800;
+letter-spacing:2px;
+}
+
+.sub{
+color:#ffb300;
+font-size:18px;
+font-weight:700;
+margin-top:15px;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+.desc{
+margin-top:18px;
+color:#cfd3dc;
+font-size:14px;
+letter-spacing:2px;
+}
+
+.cta{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+background:linear-gradient(90deg,#ff9f00,#ff5c00);
+color:white;
+text-decoration:none;
+font-weight:800;
+font-size:22px;
+padding:22px;
+border-radius:20px;
+margin-top:35px;
+box-shadow:0 0 25px rgba(255,128,0,.4);
+transition:.3s;
+}
+
+.cta:hover{
+transform:translateY(-3px);
+}
+
+.members{
+color:#b8bcc8;
+margin-top:18px;
+font-size:15px;
+}
+
+.timer-box{
+margin:25px auto;
+width:250px;
+background:#111827;
+padding:14px;
+border-radius:40px;
+border:1px solid rgba(255,255,255,.08);
+color:white;
+font-weight:700;
+font-size:20px;
+}
+
+.timer{
+color:#ff9f00;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+margin-top:25px;
+}
+
+.stat{
+background:#111827;
+padding:22px 10px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.stat h3{
+color:white;
+font-size:28px;
+}
+
+.stat p{
+color:#9ea4b2;
+font-size:12px;
+margin-top:8px;
+letter-spacing:1px;
+}
+
+.trust{
+margin-top:30px;
+background:#0b1220;
+border-radius:18px;
+padding:18px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+color:#cbd5e1;
+font-weight:600;
+}
+
+.features{
+margin-top:30px;
+text-align:left;
+}
+
+.features h2{
+color:white;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.features li{
+list-style:none;
+padding:12px;
+margin-bottom:10px;
+background:#0b1220;
+border-radius:12px;
+color:#d1d5db;
+}
+
+.footer{
+margin-top:30px;
+color:#808898;
+font-size:13px;
+}
+
+@media(max-width:500px){
+
+h1{
+font-size:40px;
+}
+
+.cta{
+font-size:20px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="logo">
+TH
+</div>
+
+<h1>TARGET HUNTER</h1>
+
+<div class="sub">
+PREMIUM EXPERT
+</div>
+
+<div class="desc">
+🔥 PREMIUM TELEGRAM COMMUNITY 🔥
+</div>
+
+<a class="cta" href="https://t.me/+WYfZXeGRrY85ZjRl" target="_blank">
+🚀 JOIN TELEGRAM NOW →
+</a>
+
+<div class="members">
+100K+ Members Getting Daily Updates
+</div>
+
+<div class="timer-box">
+Offer Ends In:
+<span class="timer" id="countdown">05:00</span>
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h3>100K+</h3>
+<p>MEMBERS</p>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>ACCESS</p>
+</div>
+
+<div class="stat">
+<h3>Daily</h3>
+<p>UPDATES</p>
+</div>
+
+</div>
+
+<div class="trust">
+<span>✅ Secure</span>
+<span>⚡ Instant</span>
+<span>👥 Community</span>
+</div>
+
+<div class="features">
+
+<h2>Why Join Target Hunter?</h2>
+
+<ul>
+<li>📈 Daily Market Insights</li>
+<li>🚀 Instant Telegram Access</li>
+<li>📊 Educational Content</li>
+<li>👥 Active Community Support</li>
+</ul>
+
+</div>
+
+<div class="footer">
+© 2026 Target Hunter. All Rights Reserved.
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let minutes = 5;
+let seconds = 0;
+
+const timer = document.getElementById("countdown");
+
+setInterval(() => {
+
+if(seconds === 0){
+if(minutes === 0){
+minutes = 5;
+seconds = 0;
+}else{
+minutes--;
+seconds = 59;
+}
+}else{
+seconds--;
+}
+
+timer.innerHTML =
+String(minutes).padStart(2,'0')
++ ":" +
+String(seconds).padStart(2,'0');
+
+},1000);
+
+</script>
+
+</body>
+</html>
